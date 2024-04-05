@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+    ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  m-auto">
+        <div class="container-fluid p-3">
+          <a class="navbar-brand px-5" href="index.html">Yhuan Shin Tejima</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link px-5  text-center" aria-current="page" href="#home">Home <i class="bi bi-house-fill"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-5  text-center" href="#skills">Skills <i class="bi bi-pen-fill"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-5  text-center" href="#portfolio">Projects <i class="bi bi-person-workspace"></i></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link px-5  text-center" href="#">Contact</a>
+              </li> -->
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section id="home">
+        <div class="container mt-3">
+            <div class="row text-center ">
+                <div class="col-lg-5 mt-5 p-5">
+                    <h1>I'm Yhuan Shin Tejima</h1>
+                    <h3>Front-End Web Developer</h3>
+                    <p class="text-justify">Hello there! 👋 I'm Yhuan Shin Tejima, a passionate BSIT student with a keen interest in front-end web development. With a strong foundation in information technology and a burning desire to create captivating and user-friendly digital experiences, I am on a journey to become a skilled front-end web developer.</p>
+                    <button class="btn btn-warning mt-4"type="button" data-bs-target="#contactModal" data-bs-toggle="modal">Contact Me <i class="bi bi-chat-left-dots-fill"></i></button>
+                </div>
+                <div class="col-lg-7 p-3">
+                    <img src="/images/profile.png" class="col-6" >
+                </div>
+                <div class="col-lg align-items-row">
+                    <a href="https://www.facebook.com"><i class="bi bi-facebook custom-icon" id="facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram custom-icon" id="instagram"></i></a> 
+                    <a href="https://github.com/"><i class="bi bi-github custom-icon " id="github"></i></a>
+
+                </div>
+            </div>
+           
+          
+        </div>
+      </section>
+      <!-- MODAL -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalLabel">Contact Me</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Fill out the form below and I will get back to you as soon as possible.</p>
+              <form>
+                <div class="mb-3">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input type="text" class="form-control mb-3" id="fname" required>
+                  <label for="lname" class="form-label">Last Name</label>
+                  <input type="text" class="form-control mb-3" id="lname" required>
+                  <label for="num" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control mb-3" id="num" required>
+                  <label for="lname" class="form-label">Message</label>
+
+                  <input type="text" class="form-control h-100 mb-3 " id="message" placeholder="Input your message here..." required>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close <i class="bi bi-x"></i></button>
+              <button type="button" id="Send" class ="btn btn-primary" onclick="showAlert()">Send <i class="bi bi-send"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+              
+      <!-- END MODAL -->
+      <section id="skills">
+        <div class="container px-4 mt-5">
+            <div class="row"><h3 class="text-center">My Skills</h3></div>
+
+            <div class="row">
+                <div class="col-lg-4 p-3">
+                    <div class="container bg-light custom-size d-flex flex-column align-items-center justify-content-center shadow-sm"><img src="/images/java.png"class="col-6" alt=""><h5 class="text-center p-3">Java</h5></div></div>
+                <div class="col-lg-4 p-3 "><div class="container bg-light custom-size d-flex flex-column align-items-center justify-content-center shadow-sm"><img src="/images/c.png" class="col-6"><h5 class="text-center p-3 ">C#</h5></div></div>
+                <div class="col-lg-4 p-3"><div class="container bg-light custom-size d-flex flex-column align-items-center justify-content-center shadow-sm"><img src="/images/php.png" class="col-6"><h5 class="text-center">
+                    PHP</h5></div></div>
+                <div class="col-lg-4 p-3"><div class="container bg-light custom-size d-flex flex-column align-items-center justify-content-center shadow-sm"><img src="/images/bootstrap.png" class="col-6"><h5 class="text-center  p-3 ">Bootstrap</h5></div></div>
+                <div class="col-lg-4 p-3">
+                    <div class="container bg-light custom-size d-flex flex-column align-items-center justify-content-center shadow-sm">
+                        <div class="row p-5">
+                            <div class="col"><img src="/images/html.png" class="col-12"></div>
+                            <div class="col"><img src="/images/css.png" class="col-12"></div>
+                        </div>
+                        <h5 class="text-center">HTML & CSS</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3"><div class="container bg-light custom-size d-flex flex-column align-items-center justify-content-center shadow-sm"><img src="/images/sql.png" class="col-6"><h5 class="text-center mt-5">MySQL</h5></div></div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="contaner mt-5">
+            <div class="row">
+                <h3 class="text-center">Projects</h3>
+            </div>
+        </div>
+        <div class="container-carousel">
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="/images/work-1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="/images/work-2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/work-3.png" style="width:100%">
+          </div>
+            
+          <a class="prev" id="prev" onclick="click">❮</a>
+          <a class="next"  id="next" onclick="click">❯</a>
+
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="/images/work-1.png" style="width:60%"  alt="My Portfolio">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/work-2.png" style="width:60%"  alt="Project 2">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/work-3.png" style="width:60%"  alt="Project 3">
+            </div>
+           
+          </div>
+        </div>
+    </section>
+      
+</body>
+</html>
